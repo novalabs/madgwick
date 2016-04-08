@@ -1,7 +1,7 @@
 {
-  "name": "imu",
+  "name": "madgwick",
   "namespace": "@",
-  "description": "IMU",
+  "description": "Madgwick filter",
   "sources": [
     "Madgwick.cpp",
     "madgwick.c"
