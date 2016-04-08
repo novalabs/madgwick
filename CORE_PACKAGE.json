@@ -1,0 +1,9 @@
+{
+  "name": "imu",
+  "namespace": "@",
+  "description": "IMU",
+  "sources": [
+    "Madgwick.cpp",
+    "madgwick.c"
+   ]
+}
