@@ -50,7 +50,7 @@ namespace madgwick {
    bool
    Madgwick::onLoop()
    {
-      Core::MW::Time t = Core::MW::Time::now();
+//      Core::MW::Time t = Core::MW::Time::now();
 
       while (mustLoop()) {
          // Override the CoreNode loop...
