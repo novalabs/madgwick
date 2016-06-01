@@ -23,8 +23,8 @@ namespace madgwick {
    {
 public:
       Madgwick(
-         const char*                    name,
-         Core::MW::Thread::PriorityEnum priority = Core::MW::Thread::PriorityEnum::NORMAL
+         const char*                name,
+         Core::MW::Thread::Priority priority = Core::MW::Thread::PriorityEnum::NORMAL
       );
       virtual
       ~Madgwick();

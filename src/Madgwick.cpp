@@ -10,16 +10,16 @@
 #include <Core/Utils/Math/Constants.hpp>
 #include <Core/Utils/Math/Conversions.hpp>
 #include <sensor_msgs/RPY_f32.hpp>
-#include <sensors/L3GD20H.hpp>
-#include <sensors/LSM303D.hpp>
+#include <L3GD20H_driver/L3GD20H.hpp>
+#include <LSM303D_driver/LSM303D.hpp>
 
 #include "madgwick/madgwick.h"
 
 
 namespace madgwick {
    Madgwick::Madgwick(
-      const char*                    name,
-      Core::MW::Thread::PriorityEnum priority
+      const char*                name,
+      Core::MW::Thread::Priority priority
    ) :
       CoreNode::CoreNode(name, priority)
    {
