@@ -1,9 +1,5 @@
 {
   "name": "madgwick",
-  "namespace": "@",
   "description": "Madgwick filter",
-  "sources": [
-    "Madgwick.cpp",
-    "madgwick.c"
-   ]
+  "provider": "core"
 }
