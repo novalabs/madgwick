@@ -9,7 +9,7 @@
 #include <core/mw/Publisher.hpp>
 #include <core/mw/Subscriber.hpp>
 #include <core/mw/CoreNode.hpp>
-#include <core/mw/CoreSensor.hpp>
+#include <core/utils/BasicSensor.hpp>
 //#include <core/mw/Callback.hpp>
 
 #include <ModuleConfiguration.hpp>
