@@ -46,19 +46,19 @@ private:
    static bool
    gyroCallback(
       const ModuleConfiguration::L3GD20H_GYRO_DATATYPE& msg,
-      core::mw::Node*                                   node
+      void*                                             context
    );
 
    static bool
    accCallback(
       const ModuleConfiguration::LSM303D_ACC_DATATYPE& msg,
-      core::mw::Node*                                  node
+      void*                                            context
    );
 
    static bool
    magCallback(
       const ModuleConfiguration::LSM303D_MAG_DATATYPE& msg,
-      core::mw::Node*                                  node
+      void*                                            context
    );
 
 

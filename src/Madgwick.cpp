@@ -117,10 +117,10 @@ Madgwick::onLoop()
 bool
 Madgwick::gyroCallback(
    const ModuleConfiguration::L3GD20H_GYRO_DATATYPE& msg,
-   core::mw::Node*                                   node
+   void*                                             context
 )
 {
-   Madgwick* tmp = static_cast<Madgwick*>(node);
+   Madgwick* tmp = static_cast<Madgwick*>(context);
 
    tmp->_gyroData = msg;
 
@@ -130,10 +130,10 @@ Madgwick::gyroCallback(
 bool
 Madgwick::accCallback(
    const ModuleConfiguration::LSM303D_ACC_DATATYPE& msg,
-   Node*                                            node
+   void*                                            context
 )
 {
-   Madgwick* tmp = static_cast<Madgwick*>(node);
+   Madgwick* tmp = static_cast<Madgwick*>(context);
 
    tmp->_accData = msg;
 
@@ -143,10 +143,10 @@ Madgwick::accCallback(
 bool
 Madgwick::magCallback(
    const ModuleConfiguration::LSM303D_MAG_DATATYPE& msg,
-   Node*                                            node
+   void*                                            context
 )
 {
-   Madgwick* tmp = static_cast<Madgwick*>(node);
+   Madgwick* tmp = static_cast<Madgwick*>(context);
 
    tmp->_magData = msg;
 
